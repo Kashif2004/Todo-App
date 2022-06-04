@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+</head>
+
+
+<body>
+    <h1><span class="heading">TODO</span> List</h1>
+    <div class="input_div">
+        <input type="text" class="input" placeholder="What do you want to do..." id="todo-item">
+        <button class="addButton" onclick="addTodo()"><i class="fas fa-plus"></i></button>
+        <button class="delButton " onclick="deleteAll()"><i class="fas fa-minus"></i></button>
+    </div>
+
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+</body>
+</html>
